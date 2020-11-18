@@ -1,0 +1,18 @@
+{
+    "name": "bola",
+    "short_name": "bola",
+    "description": "info bola",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "gcm_sender_id":"160660235605",
+    "background_color": "#00897B",
+    "theme_color": "#00897B",
+    "icons": [
+        {
+            "src": "maskable_icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
