@@ -38,6 +38,8 @@ function getArticles() {
         response.json().then(function(data) {
           var articlesHTML = "";
           data.teams.forEach(function(team) {
+            let crest = team.crestUrl;  
+            crest = crest.replace(/^http:\/\//i, 'https://'); 
             articlesHTML += `
             <div class="row">
             <div class="col s12 m6">
@@ -74,6 +76,8 @@ function getArticles() {
       console.log(teams);
       let articlesHTML = "";
       data.teams.forEach(function(team) {
+        let crest = team.crestUrl;  
+        crest = crest.replace(/^http:\/\//i, 'https://');
         articlesHTML += `
         <div class="row">
         <div class="col s12 m6">
